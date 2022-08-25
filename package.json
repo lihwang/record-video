@@ -1,0 +1,24 @@
+{
+  "name": "record-video",
+  "version": "0.0.0",
+  "private": true,
+  "description": "node录制视频",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "ffmpeg": "0.0.4",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1",
+    "puppeteer": "^16.2.0",
+    "puppeteer-recorder": "^1.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19",
+    "timecut": "^0.3.3"
+  }
+}
