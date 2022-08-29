@@ -13,11 +13,12 @@ timecut({
   right: 0,
   bottom: 0, // and the right by 6px, and the bottom by 30px
   fps: 5, // saves 30 frames for each virtual second
-  duration: 2, // for 20 virtual seconds
+  duration: 3, // for 20 virtual seconds
   output: "video.mp4", // to video.mp4 of the current working directory
-  launchArguments: ['--no-sandbox', '--disable-setuid-sandbox'],
+  launchArguments: ["--no-sandbox", "--disable-setuid-sandbox"],
   ffmpegPath: "./ffmpeg",
- inputOptions:['-analyzeduration','100M','-probesize','50M']
+  screenshotType: "jpeg",
+  outputOptions:['-qscale','0.01'],
 }).then(function () {
   console.log("Done!");
 });
